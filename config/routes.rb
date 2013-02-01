@@ -1,4 +1,13 @@
 Echo::Application.routes.draw do
+  #get "echo/show"
+
+  #get "echo/echo"
+  
+  root :to => 'echo#show'
+  
+  get 'echo/echo'
+  post 'echo/echo'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
