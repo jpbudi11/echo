@@ -7,66 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="column">
-	<div class="formAndTable">
-	    <table cellpadding="20">
-		  <tr>
-		    <td>Hello</td>
-		    <td>World</td>
-		  </tr>
-		  <tr>
-		    <td>Goodbye</td>
-		    <td>World</td>
-		  </tr>
-		</table>
-	</div>
-	</div>
 
-	<!-- this is column 2 -->
-	<div class="column">
-	<div class="formAndTable">
-	    <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-
-			<h1> Name Form</h1>
-			<hr>
-		  <div class="field">
-		    <label for="user_name">Name</label><br />
-		    <input id="user_name" name="user[name]" size="30" type="text" />
-		  </div>
-		<br>
-		  <div class="enterYour">
-		    Enter your name here.
-		  </div>
-		<br>
-		<input type="checkbox" name="boxForCheck" value="Check">Check me out
-		  <div class="actions">
-		    <input name="commit" type="submit" value="Submit Name" />
-		  </div>
-	</div>
-	</div>
-
-	<!-- this is column 3 -->
-	<div class="column">
-	<div class="formAndTable">
-	    <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-
-			<h1> Age Form </h1>
-			<hr>
-		  <div class="field">
-		    <label for="user_name">Age</label><br />
-		    <input id="user_name" name="user[name]" size="30" type="text" />
-		  </div>
-		  <br>
-		  <div class="enterYour">
-		    Enter your age here.
-		  </div>
-		<br>
-		<input type="checkbox" name="boxForCheck" value="Check">Check me out
-		  <div class="actions">
-		    <input name="commit" type="submit" value="Submit Age" />
-		  </div>
-	</div>
-	</div>
+<%= yield %>
 
 </body>
 </html>
